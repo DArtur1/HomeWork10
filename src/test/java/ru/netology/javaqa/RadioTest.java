@@ -73,7 +73,7 @@ public class RadioTest {
 
     //переключить последную волну
     @Test
-    public void shouldPlayNextStation1() {
+    public void shouldPlayFinalStation() {
         Radio radio = new Radio();
         radio.setCurrentRadioStation(9);
 
@@ -155,7 +155,7 @@ public class RadioTest {
     }
 
     @Test
-    public void shouldPlayNextVolume2() {
+    public void shouldPlayMoreMAxVolume() {
         Radio radio = new Radio();
         radio.setCurrentVolume(189);
 
