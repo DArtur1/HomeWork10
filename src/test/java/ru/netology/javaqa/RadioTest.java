@@ -5,6 +5,12 @@ import org.junit.jupiter.api.Test;
 
 public class RadioTest {
 
+    @Test
+    public void howMuchStation() {
+        Radio radio = new Radio(30);
+        Assertions.assertEquals(29, radio.getMaxRadioStation());
+    }
+
     // включить любую волну
     @Test
     public void shouldSetRadio() {
@@ -36,7 +42,7 @@ public class RadioTest {
     @Test
     public void shouldSetRadioAboveMax() {
         Radio radio = new Radio();
-        radio.setCurrentRadioStation(15);
+        radio.setCurrentRadioStation(19);
 
         int expected = 0;
         int actual = radio.getCurrentRadioStation();

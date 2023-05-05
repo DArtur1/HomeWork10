@@ -4,12 +4,24 @@ public class Radio {
 
     // Radio
 
-    private int currentRadioStation;
     private int minRadioStation = 0;
     private int maxRadioStation = 9;
+    private int currentRadioStation;
+
+    public Radio(int howMuchStation) {
+        this.maxRadioStation = howMuchStation - 1;
+    }
+
+
+    public Radio(){
+
+    }
 
     public int getCurrentRadioStation() {
         return currentRadioStation;
+    }
+    public int getMaxRadioStation(){
+        return maxRadioStation;
     }
 
     public void setCurrentRadioStation(int newCurrentRadioStation) {
